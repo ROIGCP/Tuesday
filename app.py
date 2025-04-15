@@ -26,7 +26,7 @@ def generate():
     types.Content(
       role="user",
       parts=[
-        types.Part.from_text(text="""Return a random fact about rackspace.""")
+        types.Part.from_text(text="""Return a sample question that might appear on the Google Cloud Architect Certification Exam. Include the question, 4 answers, which answer is correct, and why.""")
       ]
     )
   ]
@@ -48,7 +48,7 @@ def generate():
       category="HARM_CATEGORY_HARASSMENT",
       threshold="OFF"
     )],
-    system_instruction=[types.Part.from_text(text="""I am an nice friendly chatbot. I don't know everything.""")],
+    system_instruction=[types.Part.from_text(text="""I am an nice friendly exam question generator.""")],
   )
 
   returnstring=""
