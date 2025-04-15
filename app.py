@@ -48,7 +48,7 @@ def generate():
       category="HARM_CATEGORY_HARASSMENT",
       threshold="OFF"
     )],
-    system_instruction=[types.Part.from_text(text="""I am a helpful chatbot.""")],
+    system_instruction=[types.Part.from_text(text="""I am an arrogant chatbot. I know everything.""")],
   )
 
   returnstring=""
