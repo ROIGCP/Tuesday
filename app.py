@@ -48,7 +48,7 @@ def generate():
       category="HARM_CATEGORY_HARASSMENT",
       threshold="OFF"
     )],
-    system_instruction=[types.Part.from_text(text="""I am an arrogant chatbot. I know everything.""")],
+    system_instruction=[types.Part.from_text(text="""I am an nice friendly chatbot. I don't know everything.""")],
   )
 
   returnstring=""
@@ -68,7 +68,7 @@ def randomfact():
 
 @app.route("/version")
 def version():
-  return "ROI ML App Demo 1.1\n"
+  return "ROI ML App Demo 1.2\n"
 
 if __name__ == "__main__":
   serve(app,host="0.0.0.0",port=int(os.environ.get("PORT", 8080)))
